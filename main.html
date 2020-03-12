@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Main</title>
+		<link type="text/css" rel="stylesheet" href="css/main.css"/>
+	</head>
+	<body>
+		<header>
+      <div>Управление системой</div>
+      <div>Управление хранилищем</div>
+    </header>
+		<main>
+      <div class="stuff">
+        <ul class="folders">
+          <li>
+            <span>Алгоритмы</span>
+            <ul class="users">
+              <li>
+                <span>ivan.ivanov@mail.ru</span>
+                <ul class="files">
+                  <li>MyFirstApp</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="user">
+        <form name="userInfo">
+          <label for="rights">Права:</label>
+          <select name="rights">
+            <option value="admin">Админ</option>
+            <option value="user">Пользователь</option>
+          </select>
+          <br/>
+          <label for="block">Блокировать</label>
+          <input type="range" name="block" value="1" max="1" min="0" class="slider"></input>
+          <br/>
+          <input type="checkbox" name="delete" value="true">Удалить</input>
+          <br/>
+          <input type="submin" name="submit" value="Применить"></input>
+        </form>
+      </div>
+      <div class="storage">
+        <form name="storageSettings">
+          <label for="signUp">Регистрация новых пользователей:</label>
+          <input type="range" name="signUp" value="1" min="0" max="1" class="slider"></input>
+          <br/>
+          <label for="change">Внесение изменений в хранилище:</label>
+          <input type="range" name="change" value="1" min="0" max="1" class="slider"></input>
+        </form>
+      </div>
+    </main>
+	</body>
+</html>
