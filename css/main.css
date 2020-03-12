@@ -34,6 +34,18 @@ main{
 div.storage{
   display: none;
 }
+div.user{
+  display: none;
+}
+div.file{
+  flex-direction: column;
+  justify-content: space-around;
+}
+textarea{
+  height: 80%;
+  width: 80%;
+}
+
 main div{
   height: 100%;
   width: 100%;
@@ -47,7 +59,7 @@ main div:first-child{
 main div:last-child{
   border-left: 1px solid black;
 }
-input, select{
+input, select, button{
   font-size: large;
   margin: 1rem 0.5rem;
 }
